@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Jobs Titles</title>
+        <link rel="stylesheet" type="text/css" 
+        href="style.css"> 
+    </head>
+    <body>
+        <p id="id-TOP">
+            <img alt="CCT College Dublin" src="images/cct.jpg" style="margin-right: 0.5cm;margin-bottom: 0.3cm; float:left; width:25%" title="CCT College Dublin">
+        </p>
+        <h1> Assignment CA1 - ERD, HTML Tables & CSS</h1>
+        <h2> Module Database & Web Development
+             <br> by Carlos Eduardo Carmo do Nascimento - Student.2021281 - Course Higher Diploma in Science in Computing - 2021.10
+        </h2>
+
+        <hr /><br />
+        <b>Assessment Task: </b> HR department needs to record information about its employees, job titles, and the departments that they work at. 
+        <ul class="ultype">
+             <li><b>Employees</b> have a unique identifier, date of birth, name, gender, salary, and hire date.
+                <i>An employee</i> can belong to a different department at different dates, and possibly concurrently.
+            <li><b>Job Title</b> can be stored for each employee. Storing actual and previous Job Titles with dates for which the employee held that title.
+            <li><b>Departments</b> have a name and a unique identifier. A department can have several managers over different periods, and at the same time.
+            <li><b>Department manager</b> should have the unique department number, the employee number, and the dates they managed the department.
+        </ul>
+        <br />This project also gives the following information:
+        <ul class="ultype">
+            <li> An <b>employee</b> (including the dept manager) can belong to a different department at different dates, and possibly concurrently.
+            <li><b>Salary</b> changes, such as <b>promotions</b> and <b>raises</b>, are recorded by storing salary dates.
+            </ul>
+
+        <br />
+        <p class="ah3" id="id-Logical"> Logical Diagram of Database</p><br />
+        <img class="img" alt="Logical Diagram - Relational Data Model" src="images/ER diagram.png" title="Logical Diagram">
+
+        <!-- References of Tables -->
+        <p class="ah3" id="id-Tabels"> Tables of Database</p>
+        <p>All Entities are shown in the tables below.</p>
+            <ul>
+                <li><img class="Keyimg" alt="PrKey" src="images/prkey.png" title="Primary Key ICON">   Table attributes that are primary key are identified by this icon;</li>
+                <li><img class="Keyimg" alt="PKey" src="images/frkey.png" title="Foreign Key ICON">   When there is a secondary key in the table, this icon will be displayed in the attribute;</li>
+                <!-- <li >                   "Clicking on the Foreign key icon will link to the table referenced to the relationship."</li> -->
+            </ul>
+        <i>"Clicking on the link bellow the table will link to the table referenced to the relationship.</i>
+        <table>
+            <table>
+                <thead>
+                <caption><b>DEPARTMENTS</b></caption>
+                <tr>
+                    <th><img src="images/prkey.png" width="15%">Department ID</th>
+                    <th>Dpt Name</th>
+                </tr>
+                </thead>
+            <tr>
+            <td>0001</td>
+            <td>Finance</td>
+        </tr>
+        <tr>
+            <td>0002</td>
+            <td>HR</td>
+        </tr>
+        <tr>
+            <td>0003</td>
+            <td>Sales</td>
+        </tr>
+        <tr>
+            <td>0004</td>
+            <td>Assitent</td>
+        </tr>
+        <tr>
+            <td>0005</td>
+            <td>Kitchen</td>
+        </tr>
+        <tr>
+            <td>0006</td>
+            <td>HR</td>
+        </tr>
+        <tr>
+            <td>0007</td>
+            <td>Head Office</td>
+        </tr>
+        <tr>
+            <td>0008</td>
+            <td>Reception</td>
+        </tr>
+        <tr>
+            <td>0009</td>
+            <td>Office</td>
+        </tr>
+        <tr>
+            <td>0010</td>
+            <td>Office</td>
+        </tr>
+            </table>
+            <a href="Dept_Managers.html">Click here to access Department Manager Table</a>
+    </body>
+    
+    </html>
