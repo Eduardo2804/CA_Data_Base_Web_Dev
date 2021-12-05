@@ -64,10 +64,10 @@
                 <p class="lead"; style="font-family: 'Times New Roman', Times, serif; color:gold; size: 2px;"><b>Search System</b></p>
             </div>
             <div class="col-lg-2 order-1 mb-3 d-flex flex-column gap-2 mx-auto align-items-stretch">
-                <button name="2.1" class="btn btn-success btn-block" data-sql="SELECT dept_name AS All_Dept FROM departments;" onClick="reply_click(this)">2.1 LIST DEPARTMENTS TITTLES</button>
+                <button name="2.1" class="btn btn-success btn-block" data-sql="SELECT dept_name AS All_Dept FROM departments;" onClick="reply_click(this)">2.1 LIST DEPARTMENTS TITLES</button>
                 <button name="2.2" class="btn btn-success btn-block" data-sql="SELECT COUNT (*) AS Quant_Empl FROM employees;" onClick="reply_click(this)">2.2 LIST QUANTITATIVE OF EMPLOYEES</button>
                 <button name="2.3" class="btn btn-success btn-block" data-sql="SELECT emp_id, first_name, last_name, gender, birth_date, hire_date FROM employees WHERE gender = 'F' ORDER BY emp_id LIMIT 10;" onClick="reply_click(this)">2.3 LIST FEMALE EMPLOYEES AND THEM ATTRIBUTES</button> 
-                <button name="2.4" class="btn btn-success btn-block" data-sql="SELECT emp_id, first_name, last_name, hire_date FROM employees WHERE last_name = 'Simmel' AND hire_date > 1986-01-01 LIMIT 10;" onClick="reply_click(this)">2.4 LIST PASS/CURRT EMPLOYEES HIRED 1986-01-01 SURNAME: SIMMELUNIQUE JOB TITTLES</button>
+                <button name="2.4" class="btn btn-success btn-block" data-sql="SELECT emp_id, first_name, last_name, hire_date FROM employees WHERE last_name = 'Simmel' AND hire_date > 1986-01-01 LIMIT 10;" onClick="reply_click(this)">2.4 LIST PASS/CURRT EMPLOYEES HIRED 1986-01-01 SURNAME: SIMMEL AND UNIQUE JOB TITLE</button>
                 <button name="2.5" class="btn btn-success btn-block" data-sql="SELECT COUNT (*) AS Total_Emp_With_B FROM employees WHERE last_name LIKE 'B%';" onClick="reply_click(this)">2.5 LIST QUANTITATIVE OF EMPLOYYES` LAST NAME BEGINS WITH "B"</button>
                 <button name="2.6" class="btn btn-success btn-block" data-sql="CREATE TABLE IF NOT EXISTS emp_training (
                 trainer_id integer PRIMARY KEY AUTOINCREMENT,
@@ -104,3 +104,4 @@ WELCOME TO QUERIES EXECUTOR PART 02
         <script type="text/javascript" src="js/gui.js"></script>
     </body>
 </html>
+
